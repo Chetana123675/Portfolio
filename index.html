@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chetna More | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      padding: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff6b6b;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #ff6b6b;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: #555;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .tabs button {
+      background-color: #ffe0e9;
+      color: #d63384;
+      border: none;
+      padding: 14px 28px;
+      margin: 6px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .tabs button:hover {
+      background-color: #f9b1d2;
+    }
+
+    .tabs button.active {
+      background-color: #d63384;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s ease;
+      line-height: 1.8;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      color: #ff6b6b;
+      font-size: 28px;
+      margin-bottom: 12px;
+      border-bottom: 2px dashed #ffc9c9;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 25px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+      }
+
+      .tabs {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tabs button {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <!-- You can replace this with your own image -->
+    <img src="https://image.isu.pub/210714151957-c80d55ef53445224d81be52a8a1217cb/jpg/page_1.jpg" alt="Chetana More" class="profile-img" />
+    <h1>Chetana More</h1>
+    <p>First-Year IT Student | Future Developer | Tech Enthusiast</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" onclick="openTab('about')">About</button>
+    <button onclick="openTab('skills')">Skills</button>
+    <button onclick="openTab('education')">Education</button>
+    <button onclick="openTab('projects')">Projects</button>
+    <button onclick="openTab('certificates')">Certificates</button>
+    <button onclick="openTab('contact')">Contact</button>
+  </nav>
+
+  <section id="about" class="tab-content active">
+    <h2>About Me</h2>
+    <p>Hello! I'm Chetana More, a passionate and driven first-year IT student. I'm studying at MIT Academy of Engineering, Alandi. I'm learning how to build websites, understand programming logic, and solve tech problems. I'm excited about becoming a developer and creating digital solutions that help people.</p>
+  </section>
+
+  <section id="skills" class="tab-content">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS (Learning)</li>
+      <li>C Programming (Basics)</li>
+      <li>Python (Beginner)</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="education" class="tab-content">
+    <h2>Education</h2>
+    <p>
+      🎓 Bachelor of Technology in Information Technology<br />
+      📘 Currently in First Year<bs />
+    </p>
+  </section>
+
+  <section id="projects" class="tab-content">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>My Portfolio Website</strong> – Built with HTML & CSS (this one!)</li>
+      <li><strong>Python Programming</strong> – Used numpy and Pandas library</li>
+      <li><strong>Orange Tool</strong> – Used the Orange tool in preprocessing and various functions</li>
+      <li><strong>Tableau Tool</strong> – Used tableau tool for making grains and analyzing suitable charts</li>
+      <li><strong>OlapCube Tool</strong> – Explored the data using olap and built cube</li>
+    </ul>
+  </section>
+
+  <section id="certificates" class="tab-content">
+    <h2>Certificates</h2>
+    <ul>
+      <li>
+        <strong>Introduction to Python – Python Essentials 1</strong><br />
+      </li>
+      <li>
+        <strong>Python Certification – Python Essentials 2</strong><br />
+      </li>
+      <li>
+        <strong>Great Learning Certificate – Oracle</strong><br />
+      </li>
+      <li>
+        <strong>Simplilearn – Oracle course</strong><br />
+      </li>
+      <li>
+        <strong>Future skills prime – Creative Technology Nasscom Certificate</strong><br />
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="tab-content">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="#">chetnamore2006@gmail.com</a></p>
+    <p><strong>Phone No:</strong> 9960320362</p>
+    <p><strong>GitHub:</strong> github.com/chetnamore</p>
+  </section>
+</div>
+
+<script>
+  function openTab(tabName) {
+    const contents = document.querySelectorAll(".tab-content");
+    const buttons = document.querySelectorAll(".tabs button");
+
+    contents.forEach((tab) => tab.classList.remove("active"));
+    buttons.forEach((btn) => btn.classList.remove("active"));
+
+    document.getElementById(tabName).classList.add("active");
+    event.target.classList.add("active");
+  }
+</script>
+
+</body>
+</html>
